@@ -3,10 +3,8 @@ import java.util.Arrays;
 class PrifixSum1Darr{
     public static void presum(int[] array){
         int m=array.length;
-        int sum=0;
         for(int i=1; i<m; i++){
-            sum=array[i]+array[i-1];
-            array[i]=sum;
+            array[i]=array[i]+array[i-1];
         }
     }
     public static void main(String args[]){
